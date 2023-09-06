@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="login_id">Username:</label>
+        <input type="text" id="login_id" name="login_id" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="button" onclick="authenticate()">Login</button>
+    </form>
+
+    <p id="loginMessage"></p>
+
+    <script>
+        function authenticate() {
+            // Send a POST request to the authentication API
+            // Use the provided JavaScript Fetch API or any other preferred library
+            // Handle the response and store the Bearer token if successful
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer List</title>
+</head>
+<body>
+    <h1>Customer List</h1>
+    <button onclick="loadCustomerList()">Refresh</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name: Jane
+                <th>Last Name:Doe
+                <th>Street:Elvnu Street
+                <th>Address:H no 2
+                <th>City:Delhi
+                <th>State:Delhi
+                <th>Email:sam@gmail.com
+                <th>Phone:123456789
+            </tr>
+        </thead>
+        <tbody id="customerList">
+            <!-- Customer data will be displayed here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch and display the customer list using the GET request to the API
+        function loadCustomerList() {
+            // Use the stored Bearer token for authorization
+            // Handle the response and populate the customer list table
+        }
+
+        // Call loadCustomerList() when the page loads
+        window.onload = loadCustomerList;
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer CRUD</title>
+</head>
+<body>
+    <h1>Customer CRUD</h1>
+    <form id="customerForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <!-- Other customer fields go here -->
+        
+        <button type="button" onclick="createCustomer()">Create</button>
+        <button type="button" onclick="updateCustomer()">Update</button>
+        <button type="button" onclick="deleteCustomer()">Delete</button>
+    </form>
+
+    <p id="crudMessage"></p>
+
+    <script>
+        function createCustomer() {
+            // Send a POST request to create a new customer using the provided API
+            // Use the stored Bearer token for authorization
+            // Handle the response and display a success or error message
+        }
+
+        function updateCustomer() {
+            // Send a POST request to update an existing customer using the provided API
+            // Use the stored Bearer token for authorization
+            // Handle the response and display a success or error message
+        }
+
+        function deleteCustomer() {
+            // Send a POST request to delete an existing customer using the provided API
+            // Use the stored Bearer token for authorization
+            // Handle the response and display a success or error message
+        }
+    </script>
+</body>
+</html>
